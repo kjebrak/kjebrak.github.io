@@ -80,7 +80,7 @@ const Header = () => {
       backgroundColor="#18181b"
       ref={headerRef}
       transform="auto"
-      width={"100%"}
+      // width={"100%"}
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
@@ -102,7 +102,7 @@ const Header = () => {
             </HStack>
           </nav>
           <nav>
-            <HStack spacing={8}>
+            <HStack spacing={8} ml={"20px"}>
               {/* Add links to Projects and Contact me section */}
               <a
                 onClick={handleClick("projects")}
