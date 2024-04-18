@@ -74,11 +74,14 @@ const LandingSection = () => {
       backgroundColor="#512DA8"
       py={16}
       spacing={8}
+      px={4}
+      width="100%"
+      alignItems="flex-start"
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
+       <Heading as="h1" id="contactme-section" px={'4'}>
           Contact me
         </Heading>
+      <VStack width={"100%"} alignItems="flex-start">
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={(e) => handleSubmit(e)}>
             <VStack spacing={4}>

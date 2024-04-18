@@ -80,6 +80,7 @@ const Header = () => {
       backgroundColor="#18181b"
       ref={headerRef}
       transform="auto"
+      width={"100%"}
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
@@ -106,13 +107,13 @@ const Header = () => {
               <a
                 onClick={handleClick("projects")}
                 style={{ cursor: "pointer" }}
-                href = "#projects"
+                href="#projects"
               >
                 Projects
               </a>
               <a
                 onClick={handleClick("contactme")}
-                href = "#contact-me"
+                href="#contact-me"
                 style={{ cursor: "pointer" }}
               >
                 Contact me
