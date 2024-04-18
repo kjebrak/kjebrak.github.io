@@ -15,12 +15,12 @@ const useSubmit = () => {
     setLoading(true);
     try {
       await wait(2000);
-      if (random < 0.5) {
-        throw new Error("Something went wrong");
-      }
+      // if (random < 0.5) {
+      //   throw new Error("Something went wrong");
+      // }
       setResponse({
         type: 'success',
-        message: `Thanks for your submission ${data.firstName}, we will get back to you shortly!`,
+        message: `Thanks for your submission ${data.firstName}, this is just a test form!\nPlease contact me via email or LinkedIn if you want to get in touch!`,
       })
     } catch (error) {
       setResponse({
