@@ -28,6 +28,7 @@ const LandingSection = () => {
     alignItems="center"
     isDarkBackground
     backgroundColor="#2A4365"
+    pt={12}
   >
     <Avatar 
     name="Avatar" 

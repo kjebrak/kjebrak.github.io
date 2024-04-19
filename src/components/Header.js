@@ -51,12 +51,13 @@ const Header = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > prevScrollY.current) {
+    if (window.scrollY > prevScrollY.current && window.scrollY > 12) {
       setScrollingDown(true);
     } else {
       setScrollingDown(false);
     }
     prevScrollY.current = window.scrollY;
+    // console.log(window.scrollY) // Uncomment to see the scroll position in the console
   };
 
   useEffect(() => {
@@ -114,7 +115,7 @@ const Header = () => {
               <a
                 onClick={handleClick("contactme")}
                 href="#contact-me"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", textAlign: "center"}}
               >
                 Contact me
               </a>
