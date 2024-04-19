@@ -10,13 +10,18 @@ const bio2 = "I hate problems and love solving them!";
 
 const fluidAvatar = keyframes`
 0% {
-  border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  border-radius:  30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 15px 15px 50px #18181b
+}
+25% {
+  border-radius:  58% 42% 75% 25% / 76% 46% 54% 24%;
 }
 50% {
-  border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+  border-radius:  50% 50% 33% 67% / 55% 27% 73% 45%
 }
-100% {
-  border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%
+75% {
+  border-radius:  33% 67% 58% 42% / 63% 68% 32% 37%
+  box-shadow: -10px -5px 50px #18181b
 }`;
 
 // Implement the UI for the LandingSection component according to the instructions.
@@ -34,9 +39,10 @@ const LandingSection = () => {
     name="Avatar" 
     src={avatar_img} 
     size='3xl'
-    borderRadius={"60% 40% 30% 70% / 60% 30% 70% 40%"}
+    borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%"}
+    boxShadow={"15px 15px 50px #18181b"}
     // animation={`${fluidAvatar} 4s ease-in-out 0s infinite normal ;`}
-    animation={`${fluidAvatar} 8s linear infinite;`}
+    animation={`${fluidAvatar} 6s linear infinite;`}
     transition={`all 1s ease-in-out;`}
     // border="2px solid white" // for debugging
     background={`url(${avatar_img})`}
