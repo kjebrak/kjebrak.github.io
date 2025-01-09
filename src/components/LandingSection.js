@@ -5,7 +5,7 @@ import avatar_img from "../images/avatar_light_tropical.jpg";
 import { formatWithCursor } from "prettier";
 
 const greeting = "Hello, I am Kjetil from Norway!";
-const bio1 = "A full stack developer and chemical engineer,";
+const bio1 = "Full-stack developer and chemical engineer";
 const bio2 = "I hate problems and love solving them!";
 
 const fluidAvatar = keyframes`
@@ -38,7 +38,7 @@ const LandingSection = () => {
     <Avatar 
     name="Avatar" 
     src={avatar_img} 
-    size='3xl'
+    size='3xl' // predefined size
     borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%"}
     boxShadow={"15px 15px 50px #18181b"}
     // animation={`${fluidAvatar} 4s ease-in-out 0s infinite normal ;`}
