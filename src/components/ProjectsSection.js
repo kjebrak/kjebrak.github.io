@@ -5,10 +5,10 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "Placeholder Project",
+    title: "Slotability",
     description:
-      "Placeholder project description",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "Calculate probablity distributions for payouts and return-to-player (RTP) for slot machines based on the reel layout, betline layout and payment structure",
+    getImageSrc: () => require("../images/slotability_logo.webp"),
   },
   {
     title: "Placeholder Project",
@@ -53,6 +53,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            imageProps={{ width: "100%", height: "auto" }}
           />
         ))}
       </Box>
