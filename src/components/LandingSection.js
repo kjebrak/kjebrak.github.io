@@ -1,7 +1,8 @@
 import React from "react";
 import { Avatar, Heading, VStack, keyframes} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import avatar_img from "../images/avatar_light_tropical.jpg";
+// import avatar_img from "../images/avatar_light_tropical.jpg";
+import avatar_img from "../images/avatar-sitting-urban.jpeg";
 import { formatWithCursor } from "prettier";
 
 const greeting = "Hello, I am Kjetil from Norway!";
@@ -37,15 +38,16 @@ const LandingSection = () => {
   >
     <Avatar 
     name="Avatar" 
-    src={avatar_img} 
-    size='3xl' // predefined size
+    src={null}
+    width="380px"
+    height="380px"
     borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%"}
     boxShadow={"15px 15px 50px #18181b"}
-    // animation={`${fluidAvatar} 4s ease-in-out 0s infinite normal ;`}
     animation={`${fluidAvatar} 6s linear infinite;`}
     transition={`all 1s ease-in-out;`}
-    // border="2px solid white" // for debugging
-    background={`url(${avatar_img})`}
+    backgroundImage={`url(${avatar_img})`}
+    backgroundSize="cover"
+    backgroundPosition="center"
     _hover={{"animation-play-state": "paused", "border": "10px solid white"}}
     overflow={"hidden"}
     />
