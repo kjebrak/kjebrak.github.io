@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack, keyframes} from "@chakra-ui/react";
+import { Avatar, Heading, VStack, keyframes, Box} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 // import avatar_img from "../images/avatar_light_tropical.jpg";
 import avatar_img from "../images/avatar-sitting-urban.jpeg";
@@ -36,20 +36,21 @@ const LandingSection = () => {
     backgroundColor="#2A4365"
     pt={12}
   >
-    <Avatar 
-    name="Avatar" 
-    src={null}
-    width="380px"
-    height="380px"
-    borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%"}
-    boxShadow={"15px 15px 50px #18181b"}
-    animation={`${fluidAvatar} 6s linear infinite;`}
-    transition={`all 1s ease-in-out;`}
-    backgroundImage={`url(${avatar_img})`}
-    backgroundSize="cover"
-    backgroundPosition="center"
-    _hover={{"animation-play-state": "paused", "border": "10px solid white"}}
-    overflow={"hidden"}
+    <Box
+      width="380px"
+      height="380px"
+      borderRadius="30% 70% 70% 30% / 30% 30% 70% 70%"
+      boxShadow="15px 15px 50px #18181b"
+      animation={`${fluidAvatar} 6s linear infinite`}
+      transition="all 1s ease-in-out"
+      backgroundImage={`url(${avatar_img})`}
+      backgroundSize="cover"
+      backgroundPosition="center"
+      overflow="hidden"
+      _hover={{
+        animationPlayState: "paused",
+        border: "10px solid white"
+      }}
     />
     <VStack>
       <Heading as="h3" size="md" color="white" textAlign="center" mb={8} mt={2}>
@@ -63,7 +64,7 @@ const LandingSection = () => {
       </Heading>
     </VStack>
   </FullScreenSection>
-);
-;}
+  );
+};
 
 export default LandingSection;
