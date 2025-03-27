@@ -1,19 +1,44 @@
 import * as React from "react";
-import { VStack } from "@chakra-ui/react";
+import { VStack, Box } from "@chakra-ui/react";
 
 /**
- * Illustrates the use of children prop and spread operator
+ * A responsive full-screen section component with support for background images and gradients
  */
-const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
+const FullScreenSection = ({ 
+  children, 
+  isDarkBackground, 
+  backgroundColor, 
+  backgroundImage,
+  ...boxProps 
+}) => {
   return (
-    <VStack
-      backgroundColor={boxProps.backgroundColor}
+    <Box
+      backgroundColor={backgroundColor}
+      backgroundImage={backgroundImage}
       color={isDarkBackground ? "white" : "black"}
+      width="100%"
+      minHeight={boxProps.minHeight || "100vh"}
+      position="relative"
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundAttachment={boxProps.parallax ? "fixed" : "scroll"}
     >
-      <VStack maxWidth="1280px" minHeight="100vh" {...boxProps}>
+      <VStack
+        maxWidth="1280px"
+        minHeight={boxProps.minHeight || "100vh"}
+        width="100%"
+        margin="0 auto"
+        justifyContent={boxProps.justifyContent || "center"}
+        alignItems={boxProps.alignItems || "center"}
+        spacing={boxProps.spacing || 8}
+        px={{ base: 4, md: 8 }}
+        py={boxProps.py || { base: 16, md: 24 }}
+        position="relative"
+        zIndex={1}
+      >
         {children}
       </VStack>
-    </VStack>
+    </Box>
   );
 };
 
