@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.df6a7eab.css",
-    "main.js": "/static/js/main.efc6f45a.js",
+    "main.js": "/static/js/main.0dc72b9e.js",
     "static/js/453.98cddbb9.chunk.js": "/static/js/453.98cddbb9.chunk.js",
     "static/media/photo4.jpg": "/static/media/photo4.4c7907d15dd9ea0be97c.jpg",
     "static/media/photo2.jpg": "/static/media/photo2.7d510936625768642967.jpg",
     "static/media/photo3.jpg": "/static/media/photo3.9a32dfac129b20149889.jpg",
     "static/media/slotability_logo.webp": "/static/media/slotability_logo.1a65fee5cc79ef116f83.webp",
-    "static/media/avatar_light_tropical.jpg": "/static/media/avatar_light_tropical.40883a402e8a5faf0a66.jpg",
+    "static/media/avatar-sitting-urban.jpeg": "/static/media/avatar-sitting-urban.98e84fb5e6d705f5a0c6.jpeg",
     "index.html": "/index.html",
     "main.df6a7eab.css.map": "/static/css/main.df6a7eab.css.map",
-    "main.efc6f45a.js.map": "/static/js/main.efc6f45a.js.map",
+    "main.0dc72b9e.js.map": "/static/js/main.0dc72b9e.js.map",
     "453.98cddbb9.chunk.js.map": "/static/js/453.98cddbb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df6a7eab.css",
-    "static/js/main.efc6f45a.js"
+    "static/js/main.0dc72b9e.js"
   ]
 }
