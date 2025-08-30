@@ -56,7 +56,7 @@ const LandingSection = () => {
           height={{ base: "280px", md: "380px" }}
           borderRadius="30% 70% 70% 30% / 30% 30% 70% 70%"
           boxShadow="0 25px 50px -12px rgba(0, 0, 0, 0.6)"
-          animation={`${fluidAvatar} 8s ease-in-out infinite, ${float} 6s ease-in-out infinite`}
+          animation={`${fluidAvatar} 8s ease-in-out infinite`}
           transition="all 0.3s ease-in-out"
           backgroundImage={`url(${avatar_img})`}
           backgroundSize="cover"
